@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DANON BTP — Entreprise de construction et maçonnerie en Côte d'Ivoire</title>
+<meta name="description" content="DANON BTP accompagne vos projets de construction et de maçonnerie en Côte d'Ivoire, portée par 16 ans d'expérience terrain de son fondateur. Construction de maisons, gros œuvre, fondations, rénovation. Demandez votre devis.">
+<meta name="theme-color" content="#0F2A4A">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CI">
+<meta property="og:title" content="DANON BTP — Bâtir aujourd'hui, construire demain.">
+<meta property="og:description" content="Entreprise de construction et maçonnerie en Côte d'Ivoire, portée par 16 ans d'expérience terrain de son fondateur.">
+<meta property="og:site_name" content="DANON BTP">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Sprite d'icônes réutilisable, non affiché directement -->
+<svg aria-hidden="true" style="display:none">
+  <defs>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2C10.5 20 4 13.5 4 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M4 20l1.2-3.6A8 8 0 1 1 9 19.5L4 20Z"/><circle cx="9" cy="12" r=".5" fill="currentColor"/><circle cx="12" cy="12" r=".5" fill="currentColor"/><circle cx="15" cy="12" r=".5" fill="currentColor"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12Z"/><circle cx="12" cy="9" r="2.3"/></symbol>
+    <symbol id="icon-document" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><line x1="9.5" y1="12" x2="15" y2="12"/><line x1="9.5" y1="15.5" x2="15" y2="15.5"/></symbol>
+    <symbol id="icon-house" viewBox="0 0 24 24"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v10h12V10"/><line x1="10" y1="20" x2="10" y2="14" ></line><line x1="14" y1="20" x2="14" y2="14"></line></symbol>
+    <symbol id="icon-crane" viewBox="0 0 24 24"><line x1="5" y1="21" x2="5" y2="4"/><line x1="5" y1="4" x2="19" y2="9"/><line x1="19" y1="9" x2="19" y2="13"/><line x1="5" y1="9" x2="13" y2="9"/><line x1="2" y1="21" x2="10" y2="21"/></symbol>
+    <symbol id="icon-wall" viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="4"/><rect x="13" y="4" width="8" height="4"/><rect x="7" y="10" width="8" height="4"/><rect x="17" y="10" width="4" height="4"/><rect x="3" y="10" width="2" height="4"/><rect x="3" y="16" width="8" height="4"/><rect x="13" y="16" width="8" height="4"/></symbol>
+    <symbol id="icon-foundation" viewBox="0 0 24 24"><line x1="3" y1="21" x2="21" y2="21"/><line x1="6" y1="21" x2="6" y2="15"/><line x1="10" y1="21" x2="10" y2="15"/><line x1="14" y1="21" x2="14" y2="15"/><line x1="18" y1="21" x2="18" y2="15"/><path d="M4 15h16l-2-6H6l-2 6Z"/></symbol>
+    <symbol id="icon-beam" viewBox="0 0 24 24"><rect x="4" y="4" width="4" height="16"/><rect x="16" y="4" width="4" height="16"/><line x1="8" y1="9" x2="16" y2="9"/></symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="icon-fence" viewBox="0 0 24 24"><line x1="4" y1="5" x2="4" y2="21"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="20" y1="5" x2="20" y2="21"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="2" y1="16" x2="22" y2="16"/></symbol>
+    <symbol id="icon-renovate" viewBox="0 0 24 24"><path d="M14 4l6 6-9 9H5v-6l9-9Z"/><line x1="13" y1="7" x2="17" y2="11"/></symbol>
+    <symbol id="icon-rehab" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.7L20 8"/><path d="M20 4v4h-4"/><path d="M20 12a8 8 0 0 1-13.7 5.7L4 16"/><path d="M4 20v-4h4"/></symbol>
+    <symbol id="icon-listen" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2" y="14" width="4" height="6" rx="1"/><rect x="18" y="14" width="4" height="6" rx="1"/><path d="M18 20a4 4 0 0 1-4 3h-2"/></symbol>
+    <symbol id="icon-study" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><line x1="14.5" y1="14.5" x2="21" y2="21"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="1"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></symbol>
+    <symbol id="icon-prep" viewBox="0 0 24 24"><path d="M14 6l4 4-8 8H6v-4l8-8Z"/><path d="M4 20l1.5-4"/></symbol>
+    <symbol id="icon-build" viewBox="0 0 24 24"><path d="M17 3l4 4-3 3-4-4Z"/><path d="M14.5 5.5 4 16v4h4L18.5 9.5"/></symbol>
+    <symbol id="icon-monitor" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="icon-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><line x1="11" y1="12" x2="20" y2="3"/><line x1="16" y1="7" x2="19" y2="10"/><line x1="19" y1="4" x2="21" y2="6"/></symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-1a5 5 0 0 1 10 0v1"/><path d="M14 20v-1a4 4 0 0 1 6.5-3.1"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2h7L17 8h3v11H4Z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-4H14V6.5A1.5 1.5 0 0 1 15.5 5H17V1.5h-2.5A4.5 4.5 0 0 0 10 6v3H7v4h3v8Z"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><polyline points="4 12 9 17 20 6"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="brand"><img class="brand-logo" src="assets/img/logo-header-light.png" alt="DANON BTP"></a>
+
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#savoir-faire">Méthode</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta">Demander un devis</a>
+      <button type="button" class="burger" id="burger-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu">
+        <svg class="icon" aria-hidden="true"><use href="#icon-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" hidden>
+  <div class="mobile-nav-top">
+    <span class="brand"><img class="brand-logo" src="assets/img/logo-header-light.png" alt="DANON BTP"></span>
+    <button type="button" class="burger" id="close-btn" aria-label="Fermer le menu">
+      <svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Navigation mobile">
+    <a href="#apropos">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#savoir-faire">Méthode</a>
+    <a href="#pourquoi">Pourquoi nous</a>
+    <a href="#objectif">Notre objectif</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="btn btn-primary btn-lg">Demander un devis</a>
+</div>
+
+<main id="main">
+
+  <!-- 1. HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-media" aria-hidden="true">
+      <div class="hero-media-grid"></div>
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="container hero-content">
+      <p class="eyebrow reveal">Entreprise de construction — Côte d'Ivoire</p>
+      <h1 class="reveal">Bâtir aujourd'hui,<br>construire demain.</h1>
+      <p class="hero-subtitle reveal">DANON BTP met l'expérience du terrain au service de vos projets de construction.</p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn-primary btn-lg">Demander un devis</a>
+        <a href="#realisations" class="btn btn-outline btn-lg">Découvrir nos réalisations</a>
+      </div>
+    </div>
+    <div class="hero-stat reveal">
+      <span class="hero-stat-number" data-counter data-target="16">0</span>
+      <span class="hero-stat-label">ans d'expérience<br>du fondateur</span>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- 2. À PROPOS -->
+  <section class="section section-light" id="apropos" aria-labelledby="apropos-title">
+    <div class="container section-grid section-grid--about">
+      <div class="section-heading">
+        <span class="section-index" aria-hidden="true">02</span>
+        <p class="eyebrow reveal">À propos de DANON BTP</p>
+        <h2 id="apropos-title" class="reveal">Une entreprise construite sur l'expérience du terrain</h2>
+      </div>
+
+      <div class="about-content">
+        <p class="reveal">DANON BTP est une entreprise de construction ivoirienne fondée autour de l'expérience de son dirigeant, fort de 16 années passées sur le terrain de la maçonnerie et de la construction. Avant de devenir une structure indépendante, cette expertise s'est construite chantier après chantier : maîtrise des techniques de maçonnerie, encadrement d'équipes d'ouvriers, organisation et suivi rigoureux des travaux.</p>
+        <p class="reveal">Aujourd'hui, DANON BTP met cette expérience au service de particuliers, de propriétaires et de porteurs de projets qui veulent construire ou rénover en toute confiance — avec l'ambition claire de grandir progressivement vers la prise en charge de projets de construction complets.</p>
+
+        <ul class="proof-list reveal">
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg><span>16 ans d'expérience du fondateur</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-team"/></svg><span>Une équipe d'ouvriers encadrée</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-monitor"/></svg><span>Suivi de chantier rigoureux</span></li>
+        </ul>
+
+        <div class="vision-card reveal">
+          <span class="vision-label">Notre vision</span>
+          <p>« Devenir une entreprise de construction de référence en Côte d'Ivoire, capable d'accompagner ses clients de la préparation du projet jusqu'à sa réalisation. »</p>
+        </div>
+      </div>
+
+      <figure class="media-placeholder about-media reveal" aria-label="Photo à venir : le dirigeant de DANON BTP sur un chantier">
+        <svg class="icon placeholder-icon" aria-hidden="true"><use href="#icon-camera"/></svg>
+        <figcaption>[PHOTO À REMPLACER — le dirigeant sur un chantier]</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. 16 ANS DE TERRAIN -->
+  <section class="section section-dark" id="experience" aria-labelledby="experience-title">
+    <div class="container">
+      <div class="section-heading section-heading--center">
+        <span class="section-index" aria-hidden="true">03</span>
+        <p class="eyebrow reveal">16 ans de terrain</p>
+        <h2 id="experience-title" class="reveal">Une expertise construite chantier après chantier</h2>
+      </div>
+      <p class="experience-lede reveal">Avant de fonder DANON BTP, notre dirigeant a passé 16 ans sur le terrain de la maçonnerie et de la construction : exécution de travaux, encadrement d'équipes, participation à de nombreux projets de construction en Côte d'Ivoire. DANON BTP est une entreprise jeune — portée par un savoir-faire qui, lui, ne l'est pas.</p>
+
+      <div class="experience-columns">
+        <div class="experience-card reveal">
+          <span class="card-label">Expérience professionnelle du fondateur</span>
+          <h3>16 années de pratique terrain</h3>
+          <p>Maçonnerie, gros œuvre et encadrement de chantiers à travers différents projets de construction.</p>
+        </div>
+        <div class="experience-card experience-card--pending reveal">
+          <span class="card-label">Réalisations DANON BTP</span>
+          <h3>Une entreprise qui démarre officiellement</h3>
+          <p>Les premiers chantiers réalisés sous le nom DANON BTP seront présentés ici dès qu'ils seront livrés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SERVICES -->
+  <section class="section section-tint" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-heading section-heading--center">
+        <span class="section-index" aria-hidden="true">04</span>
+        <p class="eyebrow reveal">Nos services</p>
+        <h2 id="services-title" class="reveal">Du gros œuvre à la finition</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <span class="service-index">01</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-house"/></svg>
+          <h3>Construction de maisons</h3>
+          <p>Accompagnement de vos projets de construction résidentielle, du terrain jusqu'au bâti.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">02</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-crane"/></svg>
+          <h3>Gros œuvre</h3>
+          <p>Structure porteuse et ossature du bâtiment, réalisées selon les règles de l'art.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">03</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-wall"/></svg>
+          <h3>Travaux de maçonnerie</h3>
+          <p>Le cœur de métier de DANON BTP, porté par 16 ans de pratique du fondateur sur le terrain.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">04</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-foundation"/></svg>
+          <h3>Fondations</h3>
+          <p>Des bases solides et adaptées au sol, garantes de la durabilité de l'ouvrage.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">05</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-beam"/></svg>
+          <h3>Élévation des murs</h3>
+          <p>Montage des murs avec précision, alignement et respect des plans.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">06</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg>
+          <h3>Dalles et structures</h3>
+          <p>Coulage de dalles et réalisation d'éléments structurels en béton armé.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">07</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-fence"/></svg>
+          <h3>Construction de clôtures</h3>
+          <p>Délimitation et sécurisation de votre parcelle avec des ouvrages durables.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">08</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-renovate"/></svg>
+          <h3>Extension et rénovation</h3>
+          <p>Agrandissement ou modernisation d'un bâtiment existant.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">09</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-rehab"/></svg>
+          <h3>Travaux de réhabilitation</h3>
+          <p>Remise en état de structures dégradées, dans le respect du bâti d'origine.</p>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-index">10</span>
+          <svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg>
+          <h3>Gestion et coordination de chantier</h3>
+          <p>DANON BTP ambitionne d'accompagner progressivement ses clients dans la réalisation complète de leurs projets, en coordonnant les différents corps de métier selon les besoins du chantier.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. RÉALISATIONS -->
+  <section class="section section-light" id="realisations" aria-labelledby="realisations-title">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index" aria-hidden="true">05</span>
+        <p class="eyebrow reveal">Nos réalisations</p>
+        <h2 id="realisations-title" class="reveal">Ce que notre équipe a construit</h2>
+        <p class="section-intro reveal">Par honnêteté envers nos visiteurs, nous distinguons l'expérience professionnelle acquise par notre fondateur avant la création de l'entreprise, et les projets que DANON BTP réalisera directement en tant que structure.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Catégories de réalisations">
+        <button type="button" class="tab is-active" id="tab-experience" role="tab" aria-selected="true" aria-controls="panel-experience" tabindex="0">Expérience professionnelle du fondateur</button>
+        <button type="button" class="tab" id="tab-projets" role="tab" aria-selected="false" aria-controls="panel-projets" tabindex="-1">Réalisations DANON BTP</button>
+      </div>
+
+      <div class="tab-panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience">
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <figure class="media-placeholder project-media" aria-label="Photo à venir">
+              <svg class="icon placeholder-icon" aria-hidden="true"><use href="#icon-camera"/></svg>
+              <figcaption>[PHOTO À REMPLACER PAR UNE RÉALISATION RÉELLE]</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-tags"><span class="badge">Construction de duplex</span><span class="badge badge-outline">[Année]</span></div>
+              <h3>Construction de duplex</h3>
+              <p>Participation aux travaux de gros œuvre et de maçonnerie d'un duplex résidentiel.</p>
+              <p class="project-role">Rôle : <strong>[à préciser]</strong></p>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <figure class="media-placeholder project-media" aria-label="Photo à venir">
+              <svg class="icon placeholder-icon" aria-hidden="true"><use href="#icon-camera"/></svg>
+              <figcaption>[PHOTO À REMPLACER PAR UNE RÉALISATION RÉELLE]</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-tags"><span class="badge">Travaux de maçonnerie</span><span class="badge badge-outline">[Année]</span></div>
+              <h3>Travaux de maçonnerie</h3>
+              <p>Exécution de travaux de maçonnerie sur plusieurs chantiers de construction.</p>
+              <p class="project-role">Rôle : <strong>[à préciser]</strong></p>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <figure class="media-placeholder project-media" aria-label="Photo à venir">
+              <svg class="icon placeholder-icon" aria-hidden="true"><use href="#icon-camera"/></svg>
+              <figcaption>[PHOTO À REMPLACER PAR UNE RÉALISATION RÉELLE]</figcaption>
+            </figure>
+            <div class="project-body">
+              <div class="project-tags"><span class="badge">Gestion d'équipes</span><span class="badge badge-outline">[Année]</span></div>
+              <h3>Gestion d'équipes</h3>
+              <p>Encadrement et coordination d'équipes d'ouvriers sur le terrain.</p>
+              <p class="project-role">Rôle : <strong>[à préciser]</strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-projets" role="tabpanel" aria-labelledby="tab-projets" hidden>
+        <div class="empty-state">
+          <svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg>
+          <h3>Nos premiers chantiers arrivent bientôt</h3>
+          <p>DANON BTP démarre officiellement son activité. Les projets réalisés directement sous le nom de l'entreprise seront présentés ici, avec photos et détails, dès leur livraison.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SAVOIR-FAIRE -->
+  <section class="section section-tint" id="savoir-faire" aria-labelledby="savoirfaire-title">
+    <div class="container">
+      <div class="section-heading section-heading--center">
+        <span class="section-index" aria-hidden="true">06</span>
+        <p class="eyebrow reveal">Notre savoir-faire</p>
+        <h2 id="savoirfaire-title" class="reveal">Une méthode transparente, du besoin à la livraison</h2>
+      </div>
+
+      <ol class="process-list">
+        <li class="process-step reveal"><span class="process-num">01</span><svg class="icon" aria-hidden="true"><use href="#icon-listen"/></svg><h3>Écoute du besoin</h3><p>Nous prenons le temps de comprendre votre projet et vos attentes.</p></li>
+        <li class="process-step reveal"><span class="process-num">02</span><svg class="icon" aria-hidden="true"><use href="#icon-study"/></svg><h3>Étude du projet</h3><p>Analyse technique du terrain et des contraintes de construction.</p></li>
+        <li class="process-step reveal"><span class="process-num">03</span><svg class="icon" aria-hidden="true"><use href="#icon-document"/></svg><h3>Devis</h3><p>Une proposition claire et détaillée avant tout engagement.</p></li>
+        <li class="process-step reveal"><span class="process-num">04</span><svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg><h3>Planification</h3><p>Organisation du calendrier et des étapes de réalisation.</p></li>
+        <li class="process-step reveal"><span class="process-num">05</span><svg class="icon" aria-hidden="true"><use href="#icon-prep"/></svg><h3>Préparation du chantier</h3><p>Mobilisation de l'équipe, du matériel et sécurisation du site.</p></li>
+        <li class="process-step reveal"><span class="process-num">06</span><svg class="icon" aria-hidden="true"><use href="#icon-build"/></svg><h3>Réalisation</h3><p>Exécution des travaux dans le respect des règles de l'art.</p></li>
+        <li class="process-step reveal"><span class="process-num">07</span><svg class="icon" aria-hidden="true"><use href="#icon-monitor"/></svg><h3>Suivi des travaux</h3><p>Contrôle qualité régulier et points d'avancement avec le client.</p></li>
+        <li class="process-step reveal"><span class="process-num">08</span><svg class="icon" aria-hidden="true"><use href="#icon-key"/></svg><h3>Livraison</h3><p>Remise de l'ouvrage achevé, conforme aux attentes convenues.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7. POURQUOI CHOISIR DANON BTP -->
+  <section class="section section-light" id="pourquoi" aria-labelledby="pourquoi-title">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index" aria-hidden="true">07</span>
+        <p class="eyebrow reveal">Pourquoi choisir DANON BTP ?</p>
+        <h2 id="pourquoi-title" class="reveal">Une confiance qui se construit sur des faits</h2>
+      </div>
+
+      <ul class="reasons-list">
+        <li class="reason-row reveal"><span class="process-num">01</span><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg><div><h3>16 ans d'expérience du fondateur</h3><p>Une pratique concrète de la maçonnerie et de la construction, acquise chantier après chantier.</p></div></li>
+        <li class="reason-row reveal"><span class="process-num">02</span><svg class="icon" aria-hidden="true"><use href="#icon-team"/></svg><div><h3>Une équipe expérimentée</h3><p>Des ouvriers encadrés et coordonnés pour un travail rigoureux.</p></div></li>
+        <li class="reason-row reveal"><span class="process-num">03</span><svg class="icon" aria-hidden="true"><use href="#icon-crane"/></svg><div><h3>Une connaissance concrète du chantier</h3><p>Une compréhension réelle des réalités et contraintes du terrain en Côte d'Ivoire.</p></div></li>
+        <li class="reason-row reveal"><span class="process-num">04</span><svg class="icon" aria-hidden="true"><use href="#icon-monitor"/></svg><div><h3>Un suivi rigoureux des travaux</h3><p>Un contrôle constant de l'avancement et de la qualité d'exécution.</p></div></li>
+        <li class="reason-row reveal"><span class="process-num">05</span><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><div><h3>Qualité et satisfaction client</h3><p>Une approche orientée vers un travail bien fait, pas juste terminé.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8. NOTRE OBJECTIF -->
+  <section class="section section-anthracite" id="objectif" aria-labelledby="objectif-title">
+    <div class="container objectif-content">
+      <span class="section-index" aria-hidden="true">08</span>
+      <p class="eyebrow reveal">Notre objectif</p>
+      <blockquote class="objectif-quote reveal">
+        <p>Construire progressivement une entreprise capable de prendre en charge des projets de construction complets, et devenir un acteur reconnu du BTP en Côte d'Ivoire.</p>
+      </blockquote>
+      <p class="objectif-note reveal">Une ambition portée avec réalisme : DANON BTP avance étape par étape, sans jamais prétendre être ce qu'elle n'est pas encore.</p>
+    </div>
+  </section>
+
+  <!-- 9. CONTACT / DEVIS -->
+  <section class="section section-light" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-index" aria-hidden="true">09</span>
+        <p class="eyebrow reveal">Contact</p>
+        <h2 id="contact-title" class="reveal">Vous avez un projet ? Parlons-en.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="whatsapp-panel reveal">
+          <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-chat"/></svg>
+          <h3>Réponse plus rapide via WhatsApp</h3>
+          <p>Décrivez votre projet directement en message, notre équipe vous répond rapidement.</p>
+          <a class="btn btn-navy btn-lg" href="https://wa.me/2250777098800" target="_blank" rel="noopener">Nous contacter sur WhatsApp</a>
+          <a class="btn btn-outline btn-lg" href="tel:+2250777098800">Appeler +225 07 77 09 88 00</a>
+        </div>
+
+        <form class="quote-form reveal" id="quote-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-nom">Nom complet <span aria-hidden="true">*</span></label>
+              <input type="text" id="f-nom" name="nom" required autocomplete="name">
+              <p class="field-error" id="err-nom" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-tel">Téléphone <span aria-hidden="true">*</span></label>
+              <input type="tel" id="f-tel" name="telephone" required autocomplete="tel" inputmode="tel">
+              <p class="field-error" id="err-tel" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-whatsapp">Numéro WhatsApp</label>
+            <input type="tel" id="f-whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel">
+            <label class="checkbox-label">
+              <input type="checkbox" id="f-same" name="same-as-phone">
+              Identique au numéro de téléphone
+            </label>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="f-type">Type de projet <span aria-hidden="true">*</span></label>
+              <select id="f-type" name="type-projet" required>
+                <option value="" disabled selected>Sélectionner...</option>
+                <option>Construction de maison</option>
+                <option>Gros œuvre</option>
+                <option>Fondations</option>
+                <option>Clôture</option>
+                <option>Extension / rénovation</option>
+                <option>Réhabilitation</option>
+                <option>Autre</option>
+              </select>
+              <p class="field-error" id="err-type" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-lieu">Localisation <span aria-hidden="true">*</span></label>
+              <input type="text" id="f-lieu" name="localisation" required placeholder="Ville, commune...">
+              <p class="field-error" id="err-lieu" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-desc">Description du projet <span aria-hidden="true">*</span></label>
+            <textarea id="f-desc" name="description" rows="4" required></textarea>
+            <p class="field-error" id="err-desc" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="f-budget">Budget estimatif <span class="field-optional">(facultatif)</span></label>
+            <input type="text" id="f-budget" name="budget" placeholder="Ex : 5 000 000 FCFA">
+          </div>
+
+          <!--
+            Point d'intégration backend : cette soumission est actuellement simulée côté client
+            (voir assets/js/main.js, gestionnaire "submit" du formulaire). Brancher ici un
+            service de formulaire (ex. Formspree) ou un endpoint API dédié une fois choisi.
+          -->
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit-btn">
+            <span class="btn-label">Demander mon devis</span>
+          </button>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Barre d'action mobile -->
+<nav class="mobile-actionbar" id="mobile-actionbar" aria-label="Actions rapides">
+  <a href="tel:+2250777098800"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg><span>Appeler</span></a>
+  <a href="https://wa.me/2250777098800" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg><span>WhatsApp</span></a>
+  <a href="#contact"><svg class="icon" aria-hidden="true"><use href="#icon-document"/></svg><span>Devis</span></a>
+</nav>
+
+<!-- Bouton WhatsApp flottant (desktop/tablette) -->
+<a class="whatsapp-float" href="https://wa.me/2250777098800" target="_blank" rel="noopener" aria-label="Contacter DANON BTP sur WhatsApp">
+  <svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>
+</a>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/img/logo-header-light.png" alt="DANON BTP">
+      <p class="footer-tagline">Bâtir aujourd'hui, construire demain.</p>
+      <p class="footer-tagline-sub">Construction • Maçonnerie • Gros œuvre</p>
+      <p class="footer-location"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>[VILLE], Côte d'Ivoire</p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <a href="tel:+2250777098800"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>+225 07 77 09 88 00</a>
+      <a href="https://wa.me/2250777098800" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>+225 07 77 09 88 00</a>
+      <a href="mailto:[EMAIL]"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>[EMAIL]</a>
+      <div class="footer-social">
+        <a href="[LIEN_INSTAGRAM]" aria-label="DANON BTP sur Instagram"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg></a>
+        <a href="[LIEN_FACEBOOK]" aria-label="DANON BTP sur Facebook"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Navigation</h3>
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#savoir-faire">Méthode</a>
+      <a href="#contact">Demander un devis</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 DANON BTP — Tous droits réservés</p>
+    <p class="footer-credit">Site web conçu et développé par <a href="https://dodovroum.com/" target="_blank" rel="noopener">DodoVroum</a> — Solutions digitales pour les entreprises.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
