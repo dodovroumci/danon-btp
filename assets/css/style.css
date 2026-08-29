@@ -344,6 +344,39 @@ h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: var(--sp-2); }
 .project-card:hover .placeholder-icon,
 .project-card:focus-within .placeholder-icon { transform: scale(1.05); transition: transform 500ms var(--ease); }
 
+/* Galerie multi-photos dans une carte de réalisation */
+.project-gallery-main {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--c-gris-clair);
+}
+.project-gallery-image {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 500ms var(--ease);
+}
+.project-card:hover .project-gallery-image,
+.project-card:focus-within .project-gallery-image { transform: scale(1.05); }
+
+.project-gallery-thumbs {
+  display: flex; gap: var(--sp-2);
+  padding: var(--sp-3);
+  overflow-x: auto;
+  border-bottom: var(--border) var(--c-gris-bordure);
+  scrollbar-width: thin;
+}
+.project-gallery-thumb {
+  flex: 0 0 auto;
+  width: 48px; height: 48px;
+  border: 2px solid transparent;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0.6;
+  transition: border-color 200ms var(--ease), opacity 200ms var(--ease);
+}
+.project-gallery-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.project-gallery-thumb:hover { opacity: 1; }
+.project-gallery-thumb.is-active { border-color: var(--c-or); opacity: 1; }
+
 /* ===================================================================
    À propos
    =================================================================== */

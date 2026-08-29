@@ -137,6 +137,20 @@
   });
 
   /* ---------------------------------------------------------------
+     Galeries multi-photos — cartes de réalisations
+  --------------------------------------------------------------- */
+  document.querySelectorAll('[data-gallery]').forEach((gallery) => {
+    const mainImage = gallery.querySelector('[data-gallery-image]');
+    const thumbs = gallery.querySelectorAll('.project-gallery-thumb');
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        mainImage.src = thumb.dataset.src;
+        thumbs.forEach((t) => t.classList.toggle('is-active', t === thumb));
+      });
+    });
+  });
+
+  /* ---------------------------------------------------------------
      Barre d'action mobile — masquée quand un champ a le focus
      (évite le conflit avec le clavier virtuel)
   --------------------------------------------------------------- */
